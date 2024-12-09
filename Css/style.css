@@ -1,0 +1,108 @@
+@font-face {
+    font-family: OpenSans;
+    src: url(../fond/OpenSans-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: OpenSans;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover{
+    color: chocolate;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+select, input, button{
+    height: 40px ;
+}
+
+.wrapper{
+    padding: 0 10%;
+}
+
+section{
+    padding: 40px 0;
+    display: grid;
+    row-gap: 20px;
+}
+
+section h2{
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+}
+
+ul>li{
+    padding: 2px 0;
+}   
+
+section ul{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+section article{
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    row-gap: 10px;
+}
+
+section article p{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section article p span{
+    justify-self: end;
+    font-weight: bold;
+}
+
+section .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width:800px){
+    section .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width:412px){
+    
+    .wrapper{
+        padding: 0 1%;
+    }
+    h2{
+        color: red;
+    }
+section .container{
+  grid-template-columns: 1fr;
+}
+}
+ 
+
